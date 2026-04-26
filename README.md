@@ -1,5 +1,4 @@
-[index.html](https://github.com/user-attachments/files/27095939/index.html)
-<img width="875" height="1094" alt="截屏2026-04-25 下午5 53 05"<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +6,9 @@
     <title>icecream.avery</title>
     <style>
         /* 全局基础样式 */
-        * {
-            margin: 0;
-            padding: 0;
+        * { 
+            margin: 0; 
+            padding: 0; 
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
@@ -18,28 +17,28 @@
             background-color: #f8f5f2;
             color: #2d2d2d;
             line-height: 1.6;
-            padding: 2rem;
+            padding: clamp(1rem, 3vw, 2.5rem);
             max-width: 800px;
             margin: 0 auto;
         }
 
         /* 标题样式 */
         h1 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             font-weight: 600;
-            margin-bottom: 3rem;
+            margin-bottom: clamp(2rem, 5vw, 3.5rem);
             text-align: center;
             letter-spacing: 0.05em;
         }
 
         /* 单条冰淇淋记录卡片 */
         .icecream-entry {
-            margin-bottom: 4rem;
+            margin-bottom: clamp(2.5rem, 6vw, 4rem);
         }
 
         /* 编号和标题 */
         .entry-header {
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2.5vw, 1.15rem);
             color: #555;
             margin-bottom: 1rem;
         }
@@ -53,20 +52,19 @@
             color: #2d2d2d;
         }
 
-        /* 图片容器 */
+        /* 响应式图片 */
         .entry-image {
             width: 100%;
+            height: auto;
             border-radius: 8px;
             margin-bottom: 1rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            /* 图片按比例填充，不拉伸 */
             object-fit: cover;
             max-height: 600px;
         }
 
-        /* 感受文字 */
         .entry-note {
-            font-size: 1rem;
+            font-size: clamp(0.95rem, 2vw, 1rem);
             color: #444;
             line-height: 1.7;
             font-style: italic;
