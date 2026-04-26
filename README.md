@@ -1,4 +1,4 @@
-[index.hmtl.txt](https://github.com/user-attachments/files/27096354/index.hmtl.txt)
+[index.html](https://github.com/user-attachments/files/27096485/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -570,5 +570,3 @@
 
 </body>
 </html>
-
-
