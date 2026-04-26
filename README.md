@@ -1,4 +1,576 @@
-<img width="875" height="1094" alt="截屏2026-04-25 下午5 53 05" src="https://github.com/user-attachments/assets/fc56067b-d181-40c4-93ee-bff66adb0133" />
+[index.html](https://github.com/user-attachments/files/27095939/index.html)
+<img width="875" height="1094" alt="截屏2026-04-25 下午5 53 05"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icecream.avery</title>
+    <style>
+        /* 全局基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #2d2d2d;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        /* 单条冰淇淋记录卡片 */
+        .icecream-entry {
+            margin-bottom: 4rem;
+        }
+
+        /* 编号和标题 */
+        .entry-header {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .entry-number {
+            font-weight: 500;
+            margin-right: 0.5rem;
+        }
+
+        .entry-title {
+            color: #2d2d2d;
+        }
+
+        /* 图片容器 */
+        .entry-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            /* 图片按比例填充，不拉伸 */
+            object-fit: cover;
+            max-height: 600px;
+        }
+
+        /* 感受文字 */
+        .entry-note {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.7;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>The King of Icecream</h1>
+    
+
+    <!-- 第一条记录（示例，对应你截图里的明治冰淇淋） -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">001</span>
+        </div>
+        <!-- 把 src 替换成你电脑里的图片路径，比如 "./images/meiji-icecream.jpg" -->
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_5932.jpeg">
+    </div>
+
+    <!-- 第二条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">002</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0872.jpeg">
+    </div>
+
+
+
+<!-- 第3条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">003</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3034.JPG">
+     </div>
+    
+    
+    
+    <!-- 第4条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">004</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_7469.JPG">
+        <p class="entry-note">i do like oreo cookie crumb</p>
+    </div>
+    
+
+    
+    <!-- 第5条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">005</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_7744.JPG">
+    </div>
+    
+    
+
+    <!-- 第6条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">006</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_7812.JPG">
+        <p class="entry-note">always vanilla</p>
+    </div>
+    
+    
+    <!-- 第7条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">007</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_8002.JPG">
+        <p class="entry-note">hah, pistachio:]</p>
+    </div>
+
+
+     <!-- 第8条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">008</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_8130.JPG">
+    </div>
+
+
+
+     <!-- 第9条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">009</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/Pasted Graphic 1.png">
+        <p class="entry-note">really chocolate </p>
+    </div>
+
+
+
+     <!-- 第10条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">010</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_8359.JPG">
+    </div>
+
+
+
+     <!-- 第11条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">011</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_8435.JPG">
+        <p class="entry-note">I don't like the crushed almonds on it</p>
+    </div>
+
+
+
+     <!-- 第12条记录示例 -->
+  <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">012</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_8491.JPG">
+    </div>
+
+
+
+ <!-- 第13条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">013</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/ccdr 2025-12-20 170824.541.jpg">
+    </div>
+
+     <!-- 第14条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">014</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_9018.JPG">
+        <p class="entry-note">matcha plus cookie best combo ever</p>
+    </div>
+
+     <!-- 第15条记录示例 -->
+    <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">015</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_9172.JPG">
+    </div>
+
+
+     <!-- 第16条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">016</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0079.JPG">
+        <p class="entry-note">greatful mixue</p>
+    </div>
+
+
+     <!-- 第17条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">017</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0251.JPG">
+        <p class="entry-note">I prefer taro flavor</p>
+    </div>
+
+
+
+     <!-- 第18条记录示例 -->
+  <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">018</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0778.JPG">
+        <p class="entry-note">boba milk tea ice bar</p>
+    </div>
+
+
+     <!-- 第19条记录示例 -->
+  <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">019</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0799.JPG">
+    </div>
+
+
+
+     <!-- 第20条记录示例 -->
+ <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">020</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0917.JPG">
+    </div>
+
+
+
+     <!-- 第21条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">021</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_0940.JPG">
+    </div>
+   
+
+<!-- 第22条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">022</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_1207.JPG">
+        <p class="entry-note">DISNEY not bad, not good</p>
+    </div>
+
+
+    <!-- 第23条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">023</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_1891.JPG">
+        <p class="entry-note">cheeky</p>
+    </div>
+
+
+<!-- 第24条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">024</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/Pasted Graphic.png">
+    </div>
+
+
+    <!-- 第25条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">025</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_1725.JPG">
+        <p class="entry-note">IYKYK</p>
+    </div>
+
+
+    <!-- 第26条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">026</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_2264.JPG">
+    </div>
+
+
+
+    <!-- 第27条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">027</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_2066.JPG">
+        <p class="entry-note">funny</p>
+    </div>
+
+
+
+    <!-- 第28条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">028</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_1930.JPG">
+        <p class="entry-note">Of all the flavors in this series I still prefer the chocolate one (no photos to document it).</p>
+    </div>
+
+
+    <!-- 第29条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">029</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/Pasted Graphic 3.png">
+        <p class="entry-note">tangled, lemon cheese + milk caramel</p>
+    </div>
+
+
+
+    <!-- 第30条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">030</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3772.JPG">
+        <p class="entry-note">milky</p>
+    </div>
+
+
+    <!-- 第31条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">031</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3504.JPG">
+    </div>
+
+    <!-- 第32条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">032</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3291.JPG">
+        <p class="entry-note">a layer of crispy shell</p>
+    </div>
+
+    <!-- 第33条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">033</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/Pasted Graphic 5.png">
+        <p class="entry-note">melon</p>
+    </div>
+
+    <!-- 第34条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">034</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/Pasted Graphic 6.png">
+        <p class="entry-note">i seem to have fallen into the milk</p>
+    </div>
+
+    <!-- 第35条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">035</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4674.JPG">
+        <p class="entry-note">honestly, i forgot what it tastes like</p>
+    </div>
+    
+    <!-- 第36条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">036</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4520.JPG">
+        <p class="entry-note">Healthy mung bean popsicle</p>
+    </div>
+
+    <!-- 第37条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">037</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4515.JPG">
+        <p class="entry-note">prefer KitKat matcha than chocolate</p>
+    </div>
+
+    <!-- 第38条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">038</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4373.JPG">
+    </div>
+
+    <!-- 第39条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">039</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4368.JPG">
+    </div>
+
+
+    <!-- 第40条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">040</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_4293.JPG">
+    </div>
+
+    <!-- 第41条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">041</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_5084.jpg">
+        <p class="entry-note">Mozzarella</p>
+    </div>
+
+
+    <!-- 第42条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">042</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_5081.JPG">
+        <p class="entry-note">i don't like coconut cones</p>
+    </div>
+
+
+    <!-- 第43条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">043</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_5043.JPG">
+        <p class="entry-note">beautiful</p>
+    </div>
+
+    <!-- 第44条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">044</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3367.jpeg">
+    </div>
+
+    <!-- 第45条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">045</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_5140.JPG">
+        <p class="entry-note">YUZU</p>
+    </div>
+
+    <!-- 第46条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">046</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_3366.jpeg">
+        <p class="entry-note">it's good</p>
+    </div>
+
+    <!-- 第47条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">047</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/截屏2026-04-25 下午5.58.28.jpeg">
+        <p class="entry-note">噢耶</p>
+    </div>
+
+    <!-- 第48条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">048</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/截屏2026-04-25 下午5.56.49.jpeg">
+        <p class="entry-note">Jesus</p>
+    </div>
+
+    <!-- 第49条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">049</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/截屏2026-04-25 下午5.53.05.jpeg">
+    </div>
+
+    <!-- 第50条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">050</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/截屏2026-04-25 下午5.55.24.jpeg">
+    </div>
+
+    <!-- 第51条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">051</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/截屏2026-04-25 下午5.53.25.jpeg">
+    </div>
+
+      <!-- 第52条记录示例 -->
+   <div class="icecream-entry">
+        <div class="entry-header">
+            <span class="entry-number">052</span>
+        </div>
+        <img class="entry-image" src="/Users/chenjingzhi/Desktop/icecream.avery/IMG_1932.jpeg">
+    </div>
+
+
+</body>
+</html> src="https://github.com/user-attachments/assets/fc56067b-d181-40c4-93ee-bff66adb0133" />
 
 # icecream.avery<img width="366" height="458" alt="截屏2026-04-25 下午5 53 25" src="https://github.com/user-attachments/assets/d7b8fc1a-ccf9-4503-bb7a-9de63773c8ff" /><img width="2796" height="2395" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/012a2f82-15b3-49f6-a8e8-dbdce8156e1c" />
 <img width="2463" height="2411" alt="Pasted Graphic 6" src="https://github.com/user-attachments/assets/821ff8ad-4dc9-4e1c-af75-4ccd582eb72d" />
