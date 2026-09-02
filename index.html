@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>icecream.avery</title>
+    <!-- 引入开源手写字体，线上网页生效，替代Kristen ITC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <style>
         /* 全局基础样式 */
         * { 
             margin: 0; 
             padding: 0; 
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         body {
@@ -32,11 +35,13 @@
         }
         
         subtitle {
-            text-align: center;
-            font-family: "Kristen ITC", cursive, sans-serif; /* Kristen ITC字体，兜底备用字体 */
-            font-size: clamp(0.9rem, 2vw, 1rem);
-            color: #666;
-            margin-bottom: 1em; /* 和第一条001条目间隔1行 */
+            text-align: center !important; /*强制居中，防止被别的样式覆盖*/
+            font-family: 'Comic Neue', cursive;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #333333;
+            /* 副标题距离下面001编号：1行 */
+            margin-bottom: 1em;
         }
 
         /* 单条冰淇淋记录卡片 */
