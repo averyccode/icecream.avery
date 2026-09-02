@@ -34,15 +34,6 @@
             letter-spacing: 0.05em;
         }
         
-        subtitle {
-            text-align: center !important; /*强制居中，防止被别的样式覆盖*/
-            font-family: 'Comic Neue', cursive;
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: #333333;
-            /* 副标题距离下面001编号：1行 */
-            margin-bottom: 1em;
-        }
 
         /* 单条冰淇淋记录卡片 */
         .icecream-entry {
@@ -86,8 +77,11 @@
 </head>
 <body>
     <h1>The King of Icecream</h1>
-    <p class="subtitle">eating ice cream, any season, anywhere, is a cone-sistantly great time.</p>
+   <p style="text-align:center; font-family:'Comic Neue', cursive; font-weight:700; font-size:1.25rem; margin-bottom:1em; color:#333;">
+eating ice cream, any season, anywhere, is a cone‑sistantly great time.
+    </p>
 
+    
    <!-- 第一条记录（示例，对应你截图里的明治冰淇淋） -->
     <div class="icecream-entry">
         <div class="entry-header">
