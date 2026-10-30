@@ -1,306 +1,425 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>icecream.avery</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Original handwritten font -->
+    <!-- Main handwritten font -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Elegant serif font for decorative typography -->
+    <!-- Decorative serif font -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <style>
-        /* =========================
-           1. GLOBAL SETTINGS
-        ========================= */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            background-color: #f8f5f2;
-            color: #2d2d2d;
-            line-height: 1.6;
-            padding: clamp(1rem, 3vw, 2.5rem);
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-        }
+/* ==========================================
+   1. GLOBAL SETTINGS
+========================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* =========================
-           2. BACKGROUND ARTISTIC TEXT
-        ========================= */
+body {
+    background-color: #f8f5f2;
+    color: #2d2d2d;
 
-        .icecream-art {
-            position: fixed;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-            overflow: hidden;
-        }
+    line-height: 1.6;
 
-        .icecream-art text {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 34px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            fill: #00B8D4;
-        }
+    padding: clamp(1rem, 3vw, 2.5rem);
+
+    min-height: 100vh;
+    position: relative;
+
+    overflow-x: hidden;
+}
 
 
-        /* =========================
-           3. SIDE SLOGAN
-        ========================= */
+/* ==========================================
+   2. THREE WAVY TYPOGRAPHY LINES
+========================================== */
 
-        .side-slogan {
-            position: fixed;
-            right: 2.5%;
-            top: 50%;
-            transform: translateY(-50%);
+.icecream-art {
+    position: absolute;
 
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 25px;
-            font-weight: 500;
-            font-style: italic;
-            line-height: 1.4;
-            letter-spacing: 1.5px;
+    top: 0;
+    left: 0;
 
-            color: #00B8D4;
-            text-align: center;
+    width: 100%;
+    height: 165px;
 
-            writing-mode: vertical-rl;
+    z-index: 1;
 
-            z-index: 3;
-            pointer-events: none;
-        }
+    pointer-events: none;
+    overflow: hidden;
+}
 
+.icecream-art text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-        /* =========================
-           4. MAIN CONTENT
-        ========================= */
+    /* Smaller than the main title */
+    font-size: 19px;
 
-        .site-content {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    fill: #00B8D4;
+    opacity: 0.95;
+}
 
 
-        /* =========================
-           5. WEBSITE TITLE
-        ========================= */
+/* ==========================================
+   3. SIDE SLOGAN
+========================================== */
 
-        h1 {
-            font-family: 'Comic Neue', cursive;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            font-weight: 700;
-            margin-bottom: clamp(2rem, 5vw, 3.5rem);
-            text-align: center;
-            letter-spacing: 0.05em;
-        }
+.side-slogan {
+    position: fixed;
 
-        .site-description {
-            text-align: center;
-            font-family: 'Comic Neue', cursive;
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-            color: #666666;
-        }
+    right: 2.5%;
+    top: 48%;
 
+    transform: translateY(-50%);
 
-        /* =========================
-           6. ICE CREAM ENTRIES
-        ========================= */
+    width: 165px;
 
-        .icecream-entry {
-            margin-bottom: clamp(2.5rem, 6vw, 4rem);
-        }
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-        .entry-header {
-            font-family: 'Comic Neue', cursive;
-            font-size: clamp(1rem, 2.5vw, 1.15rem);
-            color: #555;
-            margin-bottom: 1rem;
-        }
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
 
-        .entry-number {
-            font-weight: 500;
-            margin-right: 0.5rem;
-        }
+    line-height: 1.4;
+    letter-spacing: 0.4px;
 
-        .entry-title {
-            color: #2d2d2d;
-        }
+    color: #008A9B;
 
-        .entry-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            object-fit: cover;
-            max-height: 600px;
-        }
+    text-align: center;
 
-        .entry-note {
-            font-family: 'Comic Neue', cursive;
-            font-size: clamp(0.95rem, 2vw, 1rem);
-            color: #444;
-            line-height: 1.7;
-            font-style: italic;
-        }
+    writing-mode: horizontal-tb;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.side-slogan span {
+    display: block;
+}
 
 
-        /* =========================
-           7. RESPONSIVE DESIGN
-        ========================= */
+/* ==========================================
+   4. MAIN WEBSITE CONTENT
+========================================== */
 
-        @media (max-width: 1100px) {
-            .side-slogan {
-                right: 1%;
-                font-size: 20px;
-            }
+.site-content {
+    max-width: 1100px;
 
-            .site-content {
-                max-width: 700px;
-            }
-        }
+    margin: 0 auto;
 
-        @media (max-width: 850px) {
-            .side-slogan {
-                display: none;
-            }
+    padding-top: 165px;
 
-            .icecream-art text {
-                font-size: 25px;
-            }
-        }
+    position: relative;
+    z-index: 2;
+}
 
-        @media (max-width: 600px) {
-            body {
-                padding: 1.2rem;
-            }
 
-            .icecream-art {
-                opacity: 0.45;
-            }
+/* ==========================================
+   5. MAIN TITLE
+========================================== */
 
-            .icecream-art text {
-                font-size: 21px;
-            }
+h1 {
+    font-family: 'Comic Neue', cursive;
 
-            h1 {
-                margin-bottom: 2rem;
-            }
-        }
+    font-size: clamp(2rem, 3.5vw, 2.7rem);
 
-    </style>
+    font-weight: 700;
+
+    margin-bottom: 3rem;
+
+    text-align: center;
+
+    letter-spacing: 0.04em;
+
+    color: #2d2d2d;
+}
+
+
+/* ==========================================
+   6. SUBTITLE
+========================================== */
+
+.site-description {
+    text-align: center;
+
+    font-family: 'Comic Neue', cursive;
+
+    font-weight: 700;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 4rem;
+
+    color: #666666;
+}
+
+
+/* ==========================================
+   7. ICE CREAM ENTRIES
+========================================== */
+
+.icecream-entry {
+    margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.entry-header {
+    font-family: 'Comic Neue', cursive;
+
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+
+    color: #555555;
+
+    margin-bottom: 1rem;
+}
+
+.entry-number {
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.entry-title {
+    color: #2d2d2d;
+}
+
+.entry-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+
+    margin-bottom: 1rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    object-fit: cover;
+
+    max-height: 600px;
+}
+
+.entry-note {
+    font-family: 'Comic Neue', cursive;
+
+    font-size: clamp(0.95rem, 2vw, 1rem);
+
+    color: #444444;
+
+    line-height: 1.7;
+
+    font-style: italic;
+}
+
+
+/* ==========================================
+   8. RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 1400px) {
+
+    .side-slogan {
+        display: none;
+    }
+
+    .site-content {
+        max-width: 1000px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .icecream-art {
+        height: 140px;
+    }
+
+    .icecream-art text {
+        font-size: 16px;
+    }
+
+    .site-content {
+        padding-top: 145px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1.2rem;
+    }
+
+    .icecream-art {
+        height: 110px;
+        opacity: 0.75;
+    }
+
+    .icecream-art text {
+        font-size: 14px;
+    }
+
+    .site-content {
+        padding-top: 120px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .site-description {
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+</style>
+
 </head>
 
 
 <body>
 
-    <!-- =========================
-         DECORATIVE SVG TYPOGRAPHY
-    ========================== -->
 
-    <svg class="icecream-art"
-         viewBox="0 0 1600 900"
-         preserveAspectRatio="none"
-         xmlns="http://www.w3.org/2000/svg">
+<!-- ==========================================
+     THREE WAVY DECORATIVE TEXT LINES
+========================================== -->
 
-        <defs>
+<svg
+    class="icecream-art"
+    viewBox="0 0 1600 165"
+    preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg">
 
-            <path id="curve1"
-                  d="M -150,250 C 150,80 400,650 750,400 S 1250,120 1750,350"/>
+    <defs>
 
-            <path id="curve2"
-                  d="M -150,420 C 200,250 450,800 800,570 S 1300,300 1750,520"/>
-
-            <path id="curve3"
-                  d="M 250,50 C 500,150 650,450 950,350 S 1350,100 1700,80"/>
-
-            <path id="curve4"
-                  d="M -150,750 C 200,550 450,900 800,720 S 1300,550 1750,750"/>
-
-        </defs>
-
-
-        <!-- First wave -->
-        <text>
-            <textPath href="#curve1">
-                You scream, I scream. We all scream for ice cream. You scream, I scream. We all scream for ice cream.
-            </textPath>
-        </text>
+        <!-- Wave 1: long, gentle and flowing -->
+        <path
+            id="wave-one"
+            d="
+                M -50,35
+                C 150,5 300,65 490,35
+                S 830,5 1030,35
+                S 1380,65 1640,25
+            "
+        />
 
 
-        <!-- Second wave -->
-        <text>
-            <textPath href="#curve2">
-                You scream, I scream. We all scream for ice cream. You scream, I scream. We all scream for ice cream.
-            </textPath>
-        </text>
+        <!-- Wave 2: medium length, shifted to the right -->
+        <path
+            id="wave-two"
+            d="
+                M 230,88
+                C 370,58 490,118 640,88
+                S 890,58 1050,88
+                S 1230,118 1390,78
+            "
+        />
 
 
-        <!-- Third wave -->
-        <text>
-            <textPath href="#curve3">
-                You scream, I scream. We all scream for ice cream.
-            </textPath>
-        </text>
+        <!-- Wave 3: shorter, starting from the left -->
+        <path
+            id="wave-three"
+            d="
+                M -40,140
+                C 100,110 220,160 360,135
+                S 590,105 740,135
+                S 900,155 1010,125
+            "
+        />
+
+    </defs>
 
 
-        <!-- Fourth wave -->
-        <text>
-            <textPath href="#curve4">
-                You scream, I scream. We all scream for ice cream.
-            </textPath>
-        </text>
-
-    </svg>
-
-
-    <!-- =========================
-         SIDE BRAND SLOGAN
-    ========================== -->
-
-    <div class="side-slogan">
-        so many flavours, so much to love
-    </div>
+    <!-- Wave 1 -->
+    <text>
+        <textPath href="#wave-one">
+            You scream, I scream. We all scream for ice cream.
+            You scream, I scream.
+        </textPath>
+    </text>
 
 
-
-    <!-- =========================
-         WEBSITE CONTENT
-    ========================== -->
-
-    <main class="site-content">
-
-        <h1>The King of Icecream</h1>
-
-        <p class="site-description">
-            eating ice cream, any season, anywhere,
-            is a cone-sistantly great time.
-        </p>
+    <!-- Wave 2 -->
+    <text>
+        <textPath href="#wave-two">
+            You scream, I scream. We all scream for ice cream.
+        </textPath>
+    </text>
 
 
-        <!--
-        在这里添加冰淇淋记录。
+    <!-- Wave 3 -->
+    <text>
+        <textPath href="#wave-three">
+            You scream, I scream. We all scream for ice cream.
+        </textPath>
+    </text>
+
+</svg>
+
+
+
+<!-- ==========================================
+     SIDE SLOGAN
+========================================== -->
+
+<div class="side-slogan">
+
+    <span>so many 种类,</span>
+
+    <span>so much to love.</span>
+
+</div>
+
+
+
+<!-- ==========================================
+     MAIN WEBSITE
+========================================== -->
+
+<main class="site-content">
+
+
+    <!-- Website title -->
+
+    <h1>The King of Icecream</h1>
+
+
+    <!-- Website subtitle -->
+
+    <p class="site-description">
+        eating ice cream, any season, anywhere,
+        is a cone-sistantly great time.
+    </p>
+
+
+
+    <!-- ======================================
+         ICE CREAM COLLECTION
+
+         Add your original entries below.
+    ======================================= -->
+
 
 
         body {
