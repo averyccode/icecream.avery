@@ -321,9 +321,6 @@ body {
      THREE WAVY DECORATIVE TEXT LINES
 ========================================== -->
 
-
-
-
 <svg
     class="icecream-art"
     viewBox="0 0 1600 165"
@@ -332,63 +329,67 @@ body {
 
     <defs>
 
-        <!-- First row: long and short segments -->
-        <path id="w1a"
-            d="M -30,30 C 100,0 210,60 340,30 S 500,5 620,30"/>
-
-        <path id="w1b"
-            d="M 760,30 C 880,0 1000,60 1120,30 S 1280,5 1400,30"/>
-
-        <path id="w1c"
-            d="M 1470,30 C 1520,15 1570,15 1640,30"/>
-
-
-        <!-- Second row: shifted rhythm -->
-        <path id="w2a"
-            d="M -50,88 C 80,58 200,118 330,88 S 480,62 590,88"/>
-
-        <path id="w2b"
-            d="M 660,88 C 790,58 910,118 1040,88 S 1190,62 1310,88"/>
-
-        <path id="w2c"
-            d="M 1390,88 C 1480,58 1560,118 1660,88"/>
+        <!-- Wave 1: long, gentle and flowing -->
+        <path
+            id="wave-one"
+            d="
+                M -50,35
+                C 150,5 300,65 490,35
+                S 830,5 1030,35
+                S 1380,65 1640,25
+            "
+        />
 
 
-        <!-- Third row: playful irregular rhythm -->
-        <path id="w3a"
-            d="M -40,145 C 90,115 190,165 320,140 S 470,115 560,140"/>
+        <!-- Wave 2: medium length, shifted to the right -->
+        <path
+            id="wave-two"
+            d="
+                M 230,88
+                C 370,58 490,118 640,88
+                S 890,58 1050,88
+                S 1230,118 1390,78
+            "
+        />
 
-        <path id="w3b"
-            d="M 640,140 C 750,110 850,165 970,140 S 1110,115 1210,140"/>
 
-        <path id="w3c"
-            d="M 1290,140 C 1400,110 1510,165 1640,135"/>
+        <!-- Wave 3: shorter, starting from the left -->
+        <path
+            id="wave-three"
+            d="
+                M -40,140
+                C 100,110 220,160 360,135
+                S 590,105 740,135
+                S 900,155 1010,125
+            "
+        />
 
     </defs>
 
 
-    <!-- ROW 1 -->
-    <g>
-        <text><textPath href="#w1a">You scream, I scream. We all scream for ice cream.</textPath></text>
-        <text><textPath href="#w1b">You scream, I scream. We all scream for ice cream.</textPath></text>
-        <text><textPath href="#w1c">You scream, I scream.</textPath></text>
-    </g>
+    <!-- Wave 1 -->
+    <text>
+        <textPath href="#wave-one">
+            You scream, I scream. We all scream for ice cream.
+            You scream, I scream.
+        </textPath>
+    </text>
 
 
-    <!-- ROW 2 -->
-    <g>
-        <text><textPath href="#w2a">We all scream for ice cream. You scream, I scream.</textPath></text>
-        <text><textPath href="#w2b">You scream, I scream. We all scream for ice cream.</textPath></text>
-        <text><textPath href="#w2c">We all scream for ice cream.</textPath></text>
-    </g>
+    <!-- Wave 2 -->
+    <text>
+        <textPath href="#wave-two">
+            You scream, I scream. We all scream for ice cream.
+        </textPath>
+    </text>
 
 
-    <!-- ROW 3 -->
-    <g>
-        <text><textPath href="#w3a">You scream, I scream. We all scream for ice cream.</textPath></text>
-        <text><textPath href="#w3b">We all scream for ice cream. You scream, I scream.</textPath></text>
-        <text><textPath href="#w3c">You scream, I scream.</textPath></text>
-    </g>
+    <!-- Wave 3 -->
+    <text>
+        <textPath href="#wave-three">
+            You scream, I scream. We all scream for ice cream.
+        </textPath>
+    </text>
 
 </svg>
 
