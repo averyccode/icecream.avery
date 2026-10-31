@@ -330,32 +330,44 @@ body {
     preserveAspectRatio="none"
     xmlns="http://www.w3.org/2000/svg">
 
-    <defs>
+   <defs>
 
-        <!-- WAVE 1: 两段较长，整体横跨页面 -->
-        <path id="wave1a"
-            d="M -50 38 C 180 -5, 480 -5, 760 38" />
+    <!-- WAVE 1: 大幅度起伏，先下后上 -->
+    <path id="wave1a"
+        d="M -50 45
+           C 120 -35, 300 -35, 460 35
+           S 680 115, 760 35" />
 
-        <path id="wave1b"
-            d="M 850 38 C 1080 75, 1380 75, 1650 38" />
-
-
-        <!-- WAVE 2: 起点错开，曲线更舒展 -->
-        <path id="wave2a"
-            d="M -80 88 C 180 48, 440 48, 730 88" />
-
-        <path id="wave2b"
-            d="M 820 88 C 1080 125, 1370 125, 1660 88" />
+    <path id="wave1b"
+        d="M 850 35
+           C 1030 -45, 1220 -35, 1400 40
+           S 1580 100, 1650 30" />
 
 
-        <!-- WAVE 3: 长度和起点不规则 -->
-        <path id="wave3a"
-            d="M -50 137 C 220 100, 530 100, 850 137" />
+    <!-- WAVE 2: 与第一条错开，形成反向波浪 -->
+    <path id="wave2a"
+        d="M -80 90
+           C 100 175, 300 175, 470 95
+           S 650 10, 730 95" />
 
-        <path id="wave3b"
-            d="M 940 137 C 1160 165, 1410 165, 1650 137" />
+    <path id="wave2b"
+        d="M 820 95
+           C 1000 175, 1200 175, 1380 95
+           S 1570 15, 1660 90" />
 
-    </defs>
+
+    <!-- WAVE 3: 起伏幅度略小，保持自然变化 -->
+    <path id="wave3a"
+        d="M -50 135
+           C 130 65, 330 65, 510 135
+           S 730 205, 850 130" />
+
+    <path id="wave3b"
+        d="M 940 130
+           C 1110 55, 1320 55, 1480 125
+           S 1600 175, 1650 125" />
+
+</defs>
 
 
     <!-- WAVE 1 -->
@@ -368,8 +380,8 @@ body {
 
     <text>
         <textPath href="#wave1b">
-            Ice cream makes every day a little sweeter. ·
-            Ice cream makes every day a little sweeter.
+            You scream, I scream. 
+            We all scream for ice cream.
         </textPath>
     </text>
 
@@ -377,8 +389,8 @@ body {
     <!-- WAVE 2 -->
     <text>
         <textPath href="#wave2a">
-            A little scoop of happiness, wherever you go. ·
-            A little scoop of happiness, wherever you go.
+            I scream. We all scream for ice cream. ·
+            You scream, I scream. We all scream 
         </textPath>
     </text>
 
