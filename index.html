@@ -47,20 +47,16 @@ body {
 
 
 /* ==========================================
-   2. THREE WAVY TYPOGRAPHY LINES
+   THREE WAVY TYPOGRAPHY LINES
 ========================================== */
 
 .icecream-art {
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 165px;
-
     z-index: 1;
-
     pointer-events: none;
     overflow: visible;
     background: transparent;
@@ -68,18 +64,24 @@ body {
 
 .icecream-art text {
     font-family: 'Cormorant Garamond', Georgia, serif;
-
-    /* Smaller than the main title */
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 0.5px;
-
     fill: #00B8D4;
-    storke: none;
+    stroke: none;
     opacity: 0.95;
 }
 
+@media (max-width: 768px) {
+    .icecream-art {
+        height: 125px;
+    }
 
+    .icecream-art text {
+        font-size: 14px;
+    }
+}
+    
 /* ==========================================
    3. SIDE SLOGAN
 ========================================== */
@@ -330,46 +332,80 @@ body {
 
     <defs>
 
-        <!-- Wave 1: long, gentle and flowing -->
-        <path id="wave 1" d="M -100 50 Q 400 0 800 50 T 1700 50" />
+        <!-- WAVE 1: 两段较长，整体横跨页面 -->
+        <path id="wave1a"
+            d="M -50 38 C 180 -5, 480 -5, 760 38" />
 
-        <!-- Wave 2: medium length, shifted to the right -->
-       <path id="wave 2" d="M -100 50 Q 400 0 800 50 T 1000 50" />
+        <path id="wave1b"
+            d="M 850 38 C 1080 75, 1380 75, 1650 38" />
 
 
-        <!-- Wave 3: shorter, starting from the left -->
-       <path id="wave 3" d="M -100 50 Q 400 0 800 50 T 1500 50" />
+        <!-- WAVE 2: 起点错开，曲线更舒展 -->
+        <path id="wave2a"
+            d="M -80 88 C 180 48, 440 48, 730 88" />
+
+        <path id="wave2b"
+            d="M 820 88 C 1080 125, 1370 125, 1660 88" />
+
+
+        <!-- WAVE 3: 长度和起点不规则 -->
+        <path id="wave3a"
+            d="M -50 137 C 220 100, 530 100, 850 137" />
+
+        <path id="wave3b"
+            d="M 940 137 C 1160 165, 1410 165, 1650 137" />
 
     </defs>
 
 
-    <!-- Wave 1 -->
+    <!-- WAVE 1 -->
     <text>
-        <textPath href="#wave-one">
-            You scream, I scream. We all scream for ice cream.
-            You scream, I scream.
-        </textPath>
-    </text>
-
-
-    <!-- Wave 2 -->
-    <text>
-        <textPath href="#wave-two">
+        <textPath href="#wave1a">
+            You scream, I scream. We all scream for ice cream. ·
             You scream, I scream. We all scream for ice cream.
         </textPath>
     </text>
 
-
-    <!-- Wave 3 -->
     <text>
-        <textPath href="#wave-three">
-            You scream, I scream. We all scream for ice cream.
+        <textPath href="#wave1b">
+            Ice cream makes every day a little sweeter. ·
+            Ice cream makes every day a little sweeter.
+        </textPath>
+    </text>
+
+
+    <!-- WAVE 2 -->
+    <text>
+        <textPath href="#wave2a">
+            A little scoop of happiness, wherever you go. ·
+            A little scoop of happiness, wherever you go.
+        </textPath>
+    </text>
+
+    <text>
+        <textPath href="#wave2b">
+            Life is better with sprinkles on top. ·
+            Life is better with sprinkles on top.
+        </textPath>
+    </text>
+
+
+    <!-- WAVE 3 -->
+    <text>
+        <textPath href="#wave3a">
+            So many flavours, so many lovely little moments. ·
+            So many flavours, so many lovely little moments.
+        </textPath>
+    </text>
+
+    <text>
+        <textPath href="#wave3b">
+            Happiness comes in a cone. ·
+            Happiness comes in a cone.
         </textPath>
     </text>
 
 </svg>
-
-
 
 
 <!-- ==========================================
